@@ -13,3 +13,5 @@ Route::get('/home', function () {
 
 // Route Resource untuk User
 Route::resource('user', ManagementUserController::class);
+
+Route::get('/home', [ManagementUserController::class, 'index']);
